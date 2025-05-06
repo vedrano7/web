@@ -1,0 +1,32 @@
+.index-body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(250, 236, 218);
+
+
+    width: 100%;
+
+}
+
+main {
+    margin: 0;
+    flex: 1;
+    padding-bottom: 300px;
+
+
+    padding-top: 60px;
+    padding-left: 150px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .index-body {
+        padding-top: 139.5px;
+    }
+}

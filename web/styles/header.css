@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Alucrads';
+    src: url(../fonts/Alucrads.otf);
+
+}
+
+@font-face {
+    font-family: 'DPComic';
+    src: url('../fonts/DPComic.ttf');
+}
+
+.header {
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: rgb(67, 9, 9);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    width: 85px;
+}
+
+.middle-section {
+    flex: 1;
+    background-image: url(../images/header_bar.png);
+    background-position: center bottom;
+    background-size: contain;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+#current-kategorija {
+    font-family: 'Alucrads';
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+
+.search-button {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 58px;
+    transform: translateX(13px) translateY(10px);
+}
+
+.cart-button {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 44px;
+
+}
+
+#cart-count {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.879);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: DPComic;
+    font-size: 18px;
+}
+
+#cart-count.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        height: 70px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0;
+        row-gap: 0px;
+    }
+
+    .left-section {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .logo {
+        margin-top: -5px;
+    }
+
+
+    .middle-section {
+        flex: 1;
+    }
+
+    .right-section {
+        width: 150px;
+        height: 100%;
+        margin-top: -2px;
+    }
+
+    #cart-count {
+        top: 70px;
+    }
+}
+
+@media (max-width: 750px) {
+    #current-kategorija {
+        font-size: 35px;
+    }
+}

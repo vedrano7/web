@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'DPComic';
+    src: url('../fonts/DPComic.ttf');
+}
+
+.footer {
+    margin: 0;
+    flex: 1;
+    background-color: rgb(67, 9, 9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    right: 0;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-text {
+    margin: 0;
+    font-family: 'DPComic';
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+@media (max-width:1024px) {
+    .footer-text {
+        margin-left: 0px;
+    }
+}

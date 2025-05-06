@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'DPComic';
+    src: url('../fonts/DPComic.ttf');
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    top: 67px;
+    width: 150px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    z-index: 95;
+
+
+}
+
+.kategorije-menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: grey;
+    flex: 3;
+}
+
+.kategorija-option {
+    font-family: "DPComic";
+    background-color: grey;
+    cursor: pointer;
+}
+
+.kontakt-menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    flex: 1;
+}
+
+.kontakt-option {
+    font-family: "DPComic";
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1024px) {
+    .sidebar {
+        top: 139px;
+        width: 100px;
+        bottom: 100px;
+    }
+}

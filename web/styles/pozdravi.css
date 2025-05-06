@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'DPComic';
+    src: url('../fonts/DPComic.ttf');
+}
+
+.pozdravi {
+    display: flex;
+    height: 370px;
+    width: 100%;
+}
+
+
+
+.pozdravi-container {
+    width: 100%;
+    z-index: 80;
+    position: relative;
+    border-bottom: 2px solid black;
+
+}
+
+.pozdravi-slika {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 70;
+
+    object-position: center top;
+}
+
+.dobrodosli {
+    font-size: 17px;
+    margin-left: 40px;
+    color: rgb(67, 9, 9);
+}
+
+@media (max-width: 1024px) {
+    .pozdravi {
+        height: 180px;
+        width: 100%;
+    }
+
+    .pozdravi-tekst {
+        width: 80px;
+        font-size: 6px;
+        top: 45px;
+        right: 121px;
+    }
+
+    .dobrodosli {
+        font-size: 7px;
+        margin-left: 5px;
+    }
+}

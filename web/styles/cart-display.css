@@ -1,0 +1,119 @@
+.cart-display-body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(250, 236, 218);
+}
+
+
+.cart-display-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-window {
+    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    height: 70vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 10px;
+    padding: 20px;
+    overflow-y: auto
+}
+
+
+.cart-item-name {
+    font-family: 'DPComic';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(0, 0, 0);
+}
+
+.cart-item-quantity {
+    font-family: 'DPComic';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-left: 3px solid rgb(0, 0, 0);
+}
+
+.cart-article-category {
+    font-family: 'DPComic';
+    font-size: 18px;
+    background-color: rgb(67, 9, 9);
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+.cart-display-quantity-btn {
+    font-size: 16px;
+    padding: 4px 10px;
+    margin: 0 5px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cart-display-quantity-btn:hover {
+    background-color: #ddd;
+}
+
+.quantity-display {
+    font-family: 'DPComic';
+    font-size: 18px;
+    color: rgb(67, 9, 9);
+    margin: 0 5px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: rgb(67, 9, 9);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+    .logo-link {
+        box-shadow: none;
+    }
+
+    .cart-window {
+        width: 70vw;
+        margin-right: 90px;
+    }
+
+    .cart-display-body {
+        padding-top: 139.5px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    cart-display-body {
+        padding-left: 100px;
+    }
+}
